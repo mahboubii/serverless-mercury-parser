@@ -1,0 +1,17 @@
+{
+	"name": "mercury-parser-http",
+	"version": "1.0.0",
+	"description": "serverless function for @postlight/mercury-parser",
+	"main": "index.js",
+	"author": "Amin Mahboubi amin@getstream.io",
+	"license": "ISC",
+	"scripts": {
+		"start": "serverless offline start"
+	},
+	"dependencies": {
+		"@postlight/mercury-parser": "^2.0.0"
+	},
+	"devDependencies": {
+		"serverless-offline": "^4.6.0"
+	}
+}

@@ -1,0 +1,22 @@
+service: mercury-parser
+app: mercury-parser
+
+provider:
+  name: aws
+  region: eu-central-1
+  runtime: nodejs8.10
+  stage: prod
+  environment:
+    # REPLACE_YOUR_SECRET_KEY_HERE
+    SECRET_KEY:
+
+functions:
+  parser:
+    handler: handler.parser
+    events:
+      - http:
+          path: /parser
+          method: get
+
+plugins:
+  - serverless-offline
