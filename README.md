@@ -14,9 +14,19 @@ as a serverless function
 
 - Installing the serverless cli
 
-  - `yarn global add serverless`
-  - `yarn install`
-  - `serverless deploy`
+```bash
+# If you're using yarn
+yarn global add serverless
+yarn install
+
+# If you're using npm
+npm install serverless -g
+npm install
+
+# Deploying the function
+serverless deploy
+```
+
 
 ### Usage
 
