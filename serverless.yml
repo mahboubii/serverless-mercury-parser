@@ -7,8 +7,7 @@ provider:
   runtime: nodejs8.10
   stage: prod
   environment:
-    # REPLACE_YOUR_SECRET_KEY_HERE
-    SECRET_KEY:
+    # SECRET_KEY: REPLACE_YOUR_SECRET_KEY_HERE
 
 functions:
   parser:
